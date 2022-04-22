@@ -26,7 +26,7 @@ jobs:
           python-version: 3.9
       # Runs a single command using the runners shell
       - name: Run package script
-        run: ./package.sh
+        run: sudo ./package.sh
       - name: Final package
         uses: actions/upload-artifact@v1
         # if: failure()
