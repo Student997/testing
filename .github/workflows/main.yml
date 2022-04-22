@@ -1,0 +1,32 @@
+# This is a workflow to create a package for Test-Package app.
+
+name: Test - Package
+
+
+on:
+  
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  
+  build:
+  
+    runs-on: ubuntu-latest
+
+   # Steps represent a sequence of tasks that will be executed as part of the job 
+    steps:
+      
+      - uses: actions/checkout@v2
+      
+      # Runs a single command using the runners shell
+      - name: Run package script
+        run: ./package.sh
+      - name: Final package
+        uses: actions/upload-artifact@v1
+        # if: failure()
+        with:
+          name: Test-Package-packages
+          path: dist/
