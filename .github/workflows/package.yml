@@ -20,10 +20,7 @@ jobs:
     steps:
       
       - uses: actions/checkout@v2
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
+
       # Runs a single command using the runners shell
       - name: Run package script
         run: ./package.sh
@@ -31,5 +28,5 @@ jobs:
         uses: actions/upload-artifact@v1
         # if: failure()
         with:
-          name: Test-Package-packages
+          name: Test-Package-ToDo
           path: dist/
