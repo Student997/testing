@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/metron/Downloads/testing/testing/testing.csproj": {}
+    "/home/metron/Downloads/testing/testing/testing/testing.csproj": {}
   },
   "projects": {
-    "/home/metron/Downloads/testing/testing/testing.csproj": {
+    "/home/metron/Downloads/testing/testing/testing/testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/metron/Downloads/testing/testing/testing.csproj",
+        "projectUniqueName": "/home/metron/Downloads/testing/testing/testing/testing.csproj",
         "projectName": "testing",
-        "projectPath": "/home/metron/Downloads/testing/testing/testing.csproj",
+        "projectPath": "/home/metron/Downloads/testing/testing/testing/testing.csproj",
         "packagesPath": "/home/metron/.nuget/packages/",
-        "outputPath": "/home/metron/Downloads/testing/testing/obj/",
+        "outputPath": "/home/metron/Downloads/testing/testing/testing/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/metron/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.CodeAnalysis": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
