@@ -1,9 +1,11 @@
-name: lint
+name: linter
 on:
   push:
-    branches: [ main ]
+    branches: 
+      - '*'
   pull_request:
-    branches: [ main ]
+    branches: 
+      - '*'
 
 env:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
