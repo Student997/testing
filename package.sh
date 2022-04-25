@@ -24,6 +24,6 @@ mkdir $FULLAPP_DIR
 cp -R $SRC_DIR/README.md $FULLAPP_DIR/
 
 # Creating a zip
-cd $PACKAGE_DIR
+#cd $PACKAGE_DIR
 #tar -czvf $PACKAGE_DIR/$FULL_APP_FOLDER-${COMMIT_ID}.tgz $FULL_APP_FOLDER
-rm -rf $FULLAPP_DIR
+#rm -rf $FULLAPP_DIR
